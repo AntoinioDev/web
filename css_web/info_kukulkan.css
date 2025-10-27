@@ -1,0 +1,74 @@
+
+@import url('../styles.css');
+
+
+.detalle-kukulkan {
+    max-width: 800px;
+    margin: 4rem auto 2rem auto; 
+}
+
+.detalle-titulo {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-bg-medium);
+    color: var(--color-primary-dark);
+}
+
+.detalle-imagen {
+    margin: 2rem auto;
+    padding: 10px;
+    border: 1px solid var(--color-bg-medium);
+    border-radius: 8px;
+    background-color: var(--color-bg-medium); 
+    text-align: center;
+}
+
+
+.detalle-imagen img {
+  
+    max-width: 100%; 
+    height: auto;   
+    border-radius: 6px;
+    display: block; 
+}
+
+
+.detalle-imagen .caption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+.boton-volver {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: var(--color-secondary-green);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+.boton-volver:hover {
+    background-color: var(--color-primary-dark);
+}
+
+
+
+body.dark-mode .detalle-titulo {
+    color: var(--color-secondary-green);
+    border-bottom-color: var(--color-primary-dark);
+}
+
+body.dark-mode .detalle-imagen {
+    background-color: #333;
+    border-color: #555;
+}
+
+body.dark-mode .detalle-imagen .caption {
+    color: #bbb;
+}

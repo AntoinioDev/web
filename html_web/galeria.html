@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Plantas y Cultura Maya</title>
+  <link rel="stylesheet" href="../css_web/galeria.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="sidebar-closed">
+
+  <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+
+  <aside class="sidebar closed" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Maya 🌿</h2>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        ☀️
+      </button>
+    </div>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="plantas-medicinales.html">Plantas Medicinales</a>
+      <a href="galeria.html">Galería</a>
+
+    </nav>
+  </aside>
+
+  <header id="banner">
+    <h1>Galería de Plantas y Cultura Maya</h1>
+    <p>Explora imágenes de la flora sagrada y monumentos mayas, pasando el mouse sobre cada una para más información.</p>
+  </header>
+
+  <main class="content" id="content">
+
+    <section class="texto">
+        <h2 id="galeria" style="color: #2d5a27;">🌿 Imágenes Sagradas</h2>
+        <p>Descubre la belleza de las plantas medicinales y los monumentos de la cultura maya a través de esta galería interactiva.</p>
+
+        <div class="galeria">
+            <img src="../imagenes_web/albahaca.jpg" alt="Albahaca" class="imagen-galeria" data-tippy-template="info-albahaca">
+            <img src="../imagenes_web/menta.jpg" alt="Menta" class="imagen-galeria" data-tippy-template="info-menta">
+            <img src="../imagenes_web/ruda.jpg" alt="Ruda" class="imagen-galeria" data-tippy-template="info-ruda">
+            <img src="../imagenes_web/Chichen_Itza.jpg" alt="Chichén Itzá" class="imagen-galeria" data-tippy-template="info-kukulkan">
+            <img src="../imagenes_web/glifos_mayas.jpg" alt="Glifos Mayas" class="imagen-galeria" data-tippy-template="info-escritura">
+            <img src="../imagenes_web/Plantas_medicinales.jpeg" alt="Plantas Medicinales" class="imagen-galeria" data-tippy-template="info-plantas">
+        </div>
+    </section>
+
+  </main>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="../jvs_web/plantas_script.js"></script>
+  <div style="display: none;">
+    <div id="info-albahaca" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/albahaca.jpg" alt="Albahaca" style="width: 100%; border-radius: 4px;">
+      <h4>Albahaca: Propiedades Clave</h4>
+      <p>La albahaca es rica en antioxidantes y compuestos antiinflamatorios, excelente para la digestión y reducción del estrés.</p>
+                <a href="info_albahaca.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    <div id="info-menta" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/menta.jpg" alt="Menta" style="width: 100%; border-radius: 4px;">
+      <h4>Menta: Propiedades Clave</h4>
+      <p>La menta es conocida por sus efectos antiespasmódicos y carminativos, ideal para problemas estomacales.</p>
+      <a href="info_menta.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    <div id="info-ruda" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/ruda.jpg" alt="Ruda" style="width: 100%; border-radius: 4px;">
+      <h4>Ruda: Propiedades Clave</h4>
+      <p>La ruda tiene propiedades antiespasmódicas y eméticas, utilizada para calmar dolores menstruales y como repelente natural.</p>
+      <a href="info_ruda.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    <div id="info-kukulkan" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/mitsuaro_.jpg" alt="El Castillo - Chichén Itzá" style="width: 100%; border-radius: 4px;">
+      <h4>El Templo de Kukulkán</h4>
+      <p>Es un edificio prehispánico ubicado en la península de Yucatán, en el actual estado del mismo nombre. El actual templo se construyó en el siglo XII d. C. por los mayas Itzáes en su capital, la ciudad de Chichén Itzá, fundada originalmente en el siglo VI d. C.</p>
+      <a href="info_kukulkan.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    <div id="info-escritura" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/glifos_mayas.jpg" alt="Glifos mayas" style="width: 100%; border-radius: 4px;">
+      <h4>Sistema de Escritura Maya</h4>
+      <p>Los mayas desarrollaron un sofisticado sistema de escritura logosilábico, capaz de registrar su historia, mitología y conocimientos astronómicos con gran detalle.</p>
+      <a href="info_escritura.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    <div id="info-plantas" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/Plantas_medicinales.jpeg" alt="Plantas Medicinales" style="width: 100%; border-radius: 4px;">
+      <h4>Plantas Medicinales Mayas</h4>
+      <p>La flora sagrada de los mayas incluía plantas como la albahaca, menta y ruda, utilizadas para sanar, purificar y realizar ceremonias.</p>
+      <a href="plantas-medicinales.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    </div>
+</body>
+</html>

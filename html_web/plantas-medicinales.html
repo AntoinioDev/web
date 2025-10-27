@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantas Sagradas - Recetario Maya</title>
+  <link rel="stylesheet" href="../css_web/pagina_plantas.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body class="sidebar-closed"> 
+  
+  <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+
+  <aside class="sidebar closed" id="sidebar"> 
+    <div class="sidebar-header">
+      <h2>Maya 🌿</h2>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        ☀️
+      </button>
+    </div>
+    <nav>
+      <a href="../index.html">Inicio</a> 
+      <a href="plantas-medicinales.html">Plantas Medicinaless </a> 
+      <a href="./galeria.html">Galería</a>
+      
+    </nav>
+  </aside>
+
+  <header id="banner">
+    <h1>Recetario de Plantas Medicinales Mayas</h1>
+    <p>La farmacia de la selva: Conoce los usos y preparaciones de la flora sagrada.</p>
+  </header>
+  
+  <main class="content" id="content">
+    
+    <section class="texto plantas-medicinales">
+        <h2 id="plantas-sagradas" style="color: #2d5a27;">🌿 Remedios Herbales: Albahaca, Menta y Ruda</h2>
+        <p>Los antiguos mayas poseían un conocimiento botánico extraordinario, utilizando la flora de la selva para sanar, purificar y realizar ceremonias. Aquí se presentan tres remedios herbales utilizados en la tradición mesoamericana.</p>
+        
+        <div class="tarjeta-planta">
+            <img src="../imagenes_web/albahaca.jpg" alt="Imagen de Albahaca" class="imagen-planta">
+            <h3>
+                <a href="info_albahaca.html" class="planta-link-interactiva" data-tippy-template="info-albahaca">
+                    Albahaca (Ocimum basilicum)
+                </a>
+            </h3>
+            <p class="uso">Uso tradicional: Afecciones bucales y dolor de oído.</p>
+            <div class="receta">
+                <h4>Método 1: Cocimiento para enjuague/gárgaras</h4>
+                <ul>
+                    <li>**Ingredientes:** 50g de hoja seca o 100g de hoja fresca por ½ litro de agua.</li>
+                    <li>**Preparación:** Hervir durante 10 minutos.</li>
+                    <li>**Aplicación:** Con el cocimiento, enjuagar la boca o hacer gárgaras.</li>
+                </ul>
+            </div>
+            <div class="receta">
+                <h4>Método 2: Infusión</h4>
+                <ul>
+                    <li>**Ingredientes:** 1 cucharadita de hoja seca o unas hojas frescas por taza.</li>
+                    <li>**Aplicación:** Tomar tres tazas al día.</li>
+                    </ul>
+            </div>
+            <div class="receta">
+                <h4>Método 3: Uso tópico para oído</h4>
+                <ul>
+                    <li>**Aplicación:** Aplicar gotas del cocimiento tibio en el oído, dos veces al día (Usar con precaución y bajo recomendación experta).</li>
+                </ul>
+            </div>
+        </div>
+        
+         <div class="tarjeta-planta">
+            <img src="../imagenes_web/menta.jpg" alt="Imagen de Menta" class="imagen-planta">
+            
+            <h3>
+                <a href="info_menta.html" class="planta-link-interactiva" data-tippy-template="info-menta">
+                    Menta (Mentha piperita)
+                </a>
+            </h3>
+            
+            <p class="uso">Uso tradicional: Digestiva y refrescante.</p>
+            </div>
+            <div class="receta">
+                <h4>Infusión para el descanso</h4>
+                <ul>
+                    <li>**Ingredientes:** 2 cucharadas de hojas de menta fresca y 1 taza de agua.</li>
+                    <li>**Preparación:** Colocar las hojas en una olla con agua y dejar hervir durante 2 minutos. Pasar por un colador.</li>
+                    <li>**Aplicación:** Servir y tomar **media hora antes de dormir**. Beber todas las noches, mínimo durante tres semanas.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tarjeta-planta">
+            <img src="../imagenes_web/ruda.jpg" alt="Imagen de Ruda" class="imagen-planta">
+            <h3>
+                <a href="info_ruda.html" class="planta-link-interactiva" data-tippy-template="info-ruda">
+                    Ruda (Ruta graveolens)
+                </a>
+            </h3>
+            <p class="uso">Uso tradicional: Calmar y reconfortar (con moderación).</p>
+            <div class="receta">
+                <h4>Infusión de Ruda</h4>
+                <ul>
+                    <li>**Ingredientes:** 1 taza de agua y 1 cucharada de hojas secas de Ruda.</li>
+                    <li>**Preparación:** Colocar el agua en un recipiente y poner a hervir. Añadir las hojas secas, bajar la flama y dejar en **reposo durante 10 minutos**.</li>
+                    <li>**Aplicación:** Cuando esté lista, cuela la infusión y sirva caliente. Puedes añadir un endulzante de tu gusto.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+  </main>
+  
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="../jvs_web/plantas_script.js"></script>
+  <div style="display: none;">
+    <div id="info-menta" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/menta.jpg" alt="Menta" style="width: 100%; border-radius: 4px;">
+      <h4>Menta: Propiedades Clave</h4>
+      <p>La menta es conocida por sus efectos antiespasmódicos y carminativos, ideal para problemas estomacales.</p>
+      <a href="info_menta.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    <div id="info-albahaca" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/albahaca.jpg" alt="Albahaca" style="width: 100%; border-radius: 4px;">
+      <h4>Albahaca: Propiedades Clave</h4>
+      <p>La albahaca es rica en antioxidantes y compuestos antiinflamatorios, excelente para la digestión y reducción del estrés.</p>
+      <a href="info_albahaca.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    <div id="info-ruda" class="tarjeta-info-planta popover-planta">
+      <img src="../imagenes_web/ruda.jpg" alt="Ruda" style="width: 100%; border-radius: 4px;">
+      <h4>Ruda: Propiedades Clave</h4>
+      <p>La ruda tiene propiedades antiespasmódicas y eméticas, utilizada para calmar dolores menstruales y como repelente natural.</p>
+      <a href="info_ruda.html" target="_self" class="tippy-link-full">Ver Detalles Completos →</a>
+    </div>
+
+    </div>
+</body>
+</html>

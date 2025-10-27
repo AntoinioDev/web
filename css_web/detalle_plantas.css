@@ -1,0 +1,177 @@
+
+
+@import url('../styles.css');
+
+.theme-toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.theme-toggle {
+    background: var(--color-bg-light);
+    border: 2px solid var(--color-secondary-green);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    background: var(--color-secondary-green);
+    color: white;
+    transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle-container .theme-toggle {
+    background: #333;
+    border-color: var(--color-primary-light);
+    color: var(--color-primary-light);
+}
+
+body.dark-mode .theme-toggle-container .theme-toggle:hover {
+    background: var(--color-primary-light);
+    color: #333;
+}
+
+.detalle-planta {
+    max-width: 850px; 
+    margin: 4rem auto 2rem auto; 
+    padding: 20px;
+}
+
+.detalle-titulo {
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem; 
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid var(--color-primary-light); 
+    color: var(--color-primary-dark);
+}
+
+.nombre-cientifico {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--color-secondary-green);
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.detalle-imagen {
+    margin: 2.5rem auto;
+    padding: 10px;
+    border: 1px solid var(--color-bg-medium);
+    border-radius: 10px;
+    background-color: var(--color-bg-medium); 
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.detalle-imagen .caption {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+
+.texto h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primary-dark);
+    border-left: 5px solid var(--color-accent-gold); 
+    padding-left: 15px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.texto p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+
+.texto ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.texto ul li {
+    background: var(--color-bg-medium);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 5px solid var(--color-secondary-green);
+}
+
+.texto strong {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+}
+
+
+.boton-volver {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 12px 25px;
+    background-color: var(--color-secondary-green);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+}
+
+.boton-volver:hover {
+    background-color: var(--color-primary-light);
+    transform: translateY(-2px);
+}
+
+
+
+body.dark-mode .detalle-titulo {
+    color: var(--color-secondary-green);
+    border-bottom-color: var(--color-primary-dark);
+}
+
+body.dark-mode .nombre-cientifico {
+    color: var(--color-primary-light);
+}
+
+body.dark-mode .detalle-imagen {
+    background-color: #333;
+    border-color: #555;
+}
+
+body.dark-mode .detalle-imagen .caption {
+    color: #bbb;
+}
+
+body.dark-mode .texto h2 {
+    color: var(--color-primary-light);
+    border-left-color: var(--color-accent-gold);
+}
+
+body.dark-mode .texto ul li {
+    background: #2a2a2a; 
+    border-left-color: var(--color-secondary-green);
+}
+
+body.dark-mode .texto strong {
+    color: var(--color-secondary-green);
+}

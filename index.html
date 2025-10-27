@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantas y Cultura Maya - Sabiduría Ancestral</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  </head>
+<body class="sidebar-closed"> 
+  <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+
+  <aside class="sidebar closed" id="sidebar"> 
+    <div class="sidebar-header">
+      <h2>Maya 🌿</h2>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        ☀️
+  </button>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="./html_web/plantas-medicinales.html">Plantas medicinales</a>
+      <a href="./html_web/galeria.html">Galería</a>
+
+    </nav>
+  </aside>
+
+  <header id="banner">
+    <h1>Bienvenido al Fascinante Mundo de la Cultura Maya</h1>
+    <p>Descubre el legado eterno, la armonía con el entorno natural y los misterios de una sociedad antigua llena de conocimientos.</p>
+  </header>
+  
+  <main class="content" id="content">
+    <section class="texto">
+      <h2 id="inicio">La Grandeza de la Civilización Maya</h2>
+      <p>La cultura maya, una de las civilizaciones mesoamericanas más destacadas, se desarrolló en un extenso territorio que incluye el sur de México (Península de Yucatán, Chiapas y Tabasco), Guatemala, Belice, y zonas de Honduras y El Salvador, cubriendo más de 300,000 km². A lo largo de más de dos mil años, los mayas crearon un legado perdurable en múltiples facetas culturales y sociales.</p>
+      
+      <div class="image-container right">
+        <img src="imagenes_web/Chichen_Itza.jpg" alt="Templo de Kukulkán en Chichén Itzá" title="Templo de Kukulkán en Chichén Itzá">
+        <p class="caption">El majestuoso <span class="palabra-interactiva" data-tippy-template="info-kukulkan">Kukulkán</span>, Yucatán (México).</p>
+      </div>
+
+      
+      
+      <p>Su
+        <strong class="palabra-interactiva" data-tippy-template="info-escritura"><a href="./html_web/info_escritura.html" target="_self" style="color: inherit; text-decoration: none;">escritura maya</a></strong>
+        representa uno de los sistemas más avanzados en la América precolombina, ofreciendo una visión profunda de su mundo espiritual. El arte maya destaca por su precisión y significado simbólico, y su arquitectura, con pirámides y templos grandiosos, demuestra una habilidad técnica y astronómica extraordinaria. Su mitología rica, métodos numéricos sofisticados, y conocimientos en astronomía y matemáticas reflejan una mente y creatividad sobresalientes.</p>
+      
+      <p>Embárcate en esta aventura para aprender sobre la interacción de esta antigua sociedad con su medio ambiente, en particular con el mundo de las plantas, y cómo su sabiduría continúa influyendo hoy. Baja la página para observar cómo el banner se contrae suavemente, invitándote a continuar explorando.</p>
+      
+      <div class="image-container left">
+        <img src="./imagenes_web/Plantas_medicinales.jpeg" alt="Variedad de plantas tropicales y sagradas usadas por los mayas para medicina y rituales">
+        <p class="caption">La conexión maya con la naturaleza se manifestaba en el uso sagrado de diversas plantas.</p>
+      </div>
+
+      <p>En las exuberantes junglas y las productivas tierras de Mesoamérica, los mayas forjaron un vínculo esencial con la vegetación circundante, no únicamente para su supervivencia, sino también para usos terapéuticos, ceremoniales y espirituales. Cada especie vegetal poseía un rol y un simbolismo, creando una red de saberes botánicos y culturales que se transmitió a través de las eras.</p>
+      <p>Esta parte ofrece una introducción detallada a la misteriosa y sofisticada civilización maya, estableciendo los fundamentos para investigar su relación especial con las plantas y el medio ambiente.</p>
+    </section>
+  </main>
+
+  <div style="display: none;">
+    
+    <div id="info-kukulkan" class="tarjeta-info-maya popover-kukulkan">
+      <img src="imagenes_web/mitsuaro_.jpg" alt="El Castillo - Chichén Itzá">
+      <h4>El Templo de Kukulkán</h4>
+      <p>Es un edificio prehispánico ubicado en la península de Yucatán, en el actual estado del mismo nombre. El actual templo se construyó en el siglo XII d. C. por los mayas Itzáes en su capital, la ciudad de Chichén Itzá, fundada originalmente en el siglo VI d. C.</p>
+    </div>
+
+    <div id="info-escritura" class="tarjeta-info-maya">
+      <img src="./imagenes_web/glifos_mayas.jpg" alt="Glifos mayas" style="width: 100%; border-radius: 4px;">
+      <h4>Sistema de Escritura Maya</h4>
+      <p>Los mayas desarrollaron un sofisticado sistema de escritura logosilábico, capaz de registrar su historia, mitología y conocimientos astronómicos con gran detalle.</p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="script.js"></script>
+
+  <footer>
+    <p>Créditos: Jesus Antonio Tun Cupul, Dzib Cauich Nefi Salvador, Ek Chuc Abner Jobam, Morales Lopez Mario Alejandro, Cervantes Liceas Diego Nazareth</p>
+  </footer>
+
+</body>
+</html>
