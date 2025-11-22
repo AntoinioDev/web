@@ -15,22 +15,22 @@ function toggleSidebar() {
 
 let ticking = false;
 const banner = document.getElementById("banner");
-const SCROLL_THRESHOLD = 80; 
-
+const UMBRAL_ACTIVAR = 120; 
+const UMBRAL_DESACTIVAR = 60;
+let bannerEncogido = false;
 function updateBanner() {
   const scrollY = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollY > SCROLL_THRESHOLD) {
-   
-    if (!banner.classList.contains("shrink")) {
-      banner.classList.add("shrink");
-    }
-  } else {
-   
-    if (banner.classList.contains("shrink")) {
-      banner.classList.remove("shrink");
-    }
+ if (!bannerEncogido && scrollY > UMBRAL_ACTIVAR) {
+    // Activar solo si NO está encogido y pasamos umbral superior
+    banner.classList.add("shrink");
+    bannerEncogido = true;
+  } else if (bannerEncogido && scrollY < UMBRAL_DESACTIVAR) {
+    // Desactivar solo si ESTÁ encogido y bajamos del umbral inferior
+    banner.classList.remove("shrink");
+    bannerEncogido = false;
   }
+  // Entre 60-100px: zona muerta, no hacer nada
 
   ticking = false; 
 }
@@ -45,7 +45,10 @@ window.addEventListener("scroll", function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  updateBanner(); 
+  if (scrollY > UMBRAL_ACTIVAR) {
+    banner.classList.add("shrink");
+    bannerEncogido = true;
+  }
 });
 
 
