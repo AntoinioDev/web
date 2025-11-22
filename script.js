@@ -15,8 +15,8 @@ function toggleSidebar() {
 
 let ticking = false;
 const banner = document.getElementById("banner");
-const UMBRAL_ACTIVAR = 140; 
-const UMBRAL_DESACTIVAR = 110;
+const UMBRAL_ACTIVAR = 120; 
+const UMBRAL_DESACTIVAR = 30;
 let bannerEncogido = false;
 function updateBanner() {
   const scrollY = window.pageYOffset || document.documentElement.scrollTop;
